@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    column-gap: 1%;
+    max-width: 1024px;
+	margin: 0 auto;
+}
+
+header {
+    max-width: 100%;
+    background-color: black;
+    color: antiquewhite;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;  
+}
+
+.nav-link,
+.nav-link .active{
+    color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0 auto 16px;
+    padding-top: 82px;
+    font-weight: bold;
+}
+
+#ranking {
+    margin-top: 118px;
+}
+
+.carousel {
+    margin: 42px auto 16px auto;
+}
+
+.carousel img {
+    width: 800px;
+    height: 450px;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    margin-top: 166px;
+    padding: 12px;
+    background-color: black;
+    color: antiquewhite;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .carousel img {
+        width: 100%;
+    }
+
+    .container-grid {
+        display: block;
+    }
+
+    .cards {
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        margin-top: 12px;
+        padding-top: 72px;
+    }
+
+    #ranking {
+        margin-top: 16px;
+    }
+
+    footer {
+        margin-top: 36px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .carousel img {
+        width: 100%;
+    }
+
+    .container-grid {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+    }
+
+    .cards {
+        margin-bottom: 16px;
+    }
+
+    #ranking {
+        margin-top: 118px;
+    }
+
+    footer {
+        margin-top: 36px;
+    }
+}

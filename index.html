@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieAnalysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-md">
+            <div class="container">
+                <h1>MovieAnalysis</h1>
+                <button type="button" class="navbar-toggler navbar-dark" data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-itens">
+                            <a class="nav-link" href="#analises">Análises</a>
+                        </li>
+                        <li class="nav-itens">
+                            <a class="nav-link" href="#ranking">Ranking</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="carousel-filmes" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./images/terrify.jpg" alt="Filme de terror">
+                    <div class="carousel-caption">
+                        <h2>Filmes de terror</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./images/viajem-no-tempo.jpg" alt="Filme sobre viagem no tempo">
+                    <div class="carousel-caption">
+                        <h2>Filmes sobre viagem no tempo</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./images/fantasy.jpg" alt="Filme de fantasia">
+                    <div class="carousel-caption">
+                        <h2>Filmes de fantasia</h2>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carousel-filmes" data-bs-slide='prev'
+                    type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carousel-filmes" data-bs-slide='next'
+                    type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-filmes" class="active"
+                        data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-filmes" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-filmes" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div class="container">
+            <h2 id="analises">Análises</h2>
+        </div>
+        <div class="container container-grid">
+            <div class="cards">
+                <article class="card text-bg-dark">
+                    <img src="./images/mickey-mouse.jpg" alt="Boneco do Mickey Mouse olhando para o lado">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Filmes de desenhos animados</h4>
+                        <p>
+                            Filmes de desenho animados estão em alta?
+                        </p>
+                        <a href="#" class="btn btn-light">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="cards">
+                <article class="card text-bg-dark">
+                    <img src="./images/christmas.jpg" alt="Mulher com os braços abertos enquanto neva">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Analisamos os lançamentos de natal</h4>
+                        <p>
+                            Todos os detalhes dos filmes de natal de 2022.
+                        </p>
+                        <a href="#" class="btn btn-light">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="cards">
+                <article class="card text-bg-dark">
+                    <img src="./images/love.jpg" alt="Casal em clima de romance">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Analisamos os melhores filmes de romance</h4>
+                        <p>
+                            Análise completa dos melhores filmes de romance de todos os tempos.
+                        </p>
+                        <a href="#" class="btn btn-light">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="container">
+            <h2 id="ranking">Ranking</h2>
+        </div>
+        <div class="container container-grid">
+            <div class="cards">
+                <article class="card text-bg-dark">
+                    <img src="./images/spiderman.jpg" alt="Filme do homem-aranha">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Top 10 filmes de herois</h4>
+                        <p>
+                            Lista com os melhores 10 filmes já lançados de super herois.
+                        </p>
+                        <a href="#" class="btn btn-light">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="cards">
+                <article class="card text-bg-dark">
+                    <img src="./images/gothic.jpg" alt="Mulher zumbi">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Top 10 filmes de terror</h4>
+                        <p>
+                            Lista com os melhores 10 filmes já lançados de terror.
+                        </p>
+                        <a href="#" class="btn btn-light">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="cards">
+                <article class="card text-bg-dark">
+                    <img src="./images/aurora.jpg" alt="Expedição com aurora boreal ao fundo">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Top 10 filmes de aventura</h4>
+                        <p>
+                            Lista com os melhores 10 filmes já lançados de aventura.
+                        </p>
+                        <a href="#" class="btn btn-light">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid">
+        <div class="container">
+            <p>
+                &copy; MovieAnalysis - Todos os direitos reservados - 2022
+            </p>
+        </div>
+    </footer>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
